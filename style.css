@@ -24,37 +24,36 @@ header {
 }
 
 .infographic {
-  background-color: #f2f2f2;
-  padding: 20px;
-  margin-top: 20px;
+    background-color: #f2f2f2;
+    padding: 20px;
+    margin-top: 20px;
 }
 
 .infographic h3 {
-  font-size: 20px;
-  font-weight: bold;
-  margin-bottom: 10px;
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 10px;
 }
 
 .infographic img {
-  max-width: 100%;
-  margin-bottom: 10px;
+    max-width: 100%;
+    margin-bottom: 10px;
 }
 
 .infographic p {
-  font-size: 16px;
-  margin-bottom: 10px;
+    font-size: 16px;
+    margin-bottom: 10px;
 }
 
 .infographic ul {
-  list-style-type: disc;
-  margin-left: 20px;
-  font-size: 14px;
+    list-style-type: disc;
+    margin-left: 20px;
+    font-size: 14px;
 }
 
 .infographic ul li {
-  margin-bottom: 5px;
+    margin-bottom: 5px;
 }
-
 
 section {
     padding: 40px;
@@ -90,34 +89,34 @@ nav ul li a {
 
 /* Estilos do infográfico */
 #exemple {
-  margin: 1rem;
+    margin: 1rem;
 }
 
 #exemple h2 {
-  font-size: 2rem;
-  margin-bottom: 2rem;
+    font-size: 2rem;
+    margin-bottom: 2rem;
 }
 
 .application-list {
-  list-style-type: none;
-  padding: 0;
-  margin: 0;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
 }
 
 .application-list li {
-  display: flex;
-  align-items: center;
-  margin-bottom: 2rem;
+    display: flex;
+    align-items: center;
+    margin-bottom: 2rem;
 }
 
 .application-list li img {
-  width: 3rem;
-  height: 3rem;
-  margin-right: 1rem;
+    width: 3rem;
+    height: 3rem;
+    margin-right: 1rem;
 }
 
 .application-list li p {
-  font-size: 1rem;
+    font-size: 1rem;
 }
 
 /* Estilos responsivos */
