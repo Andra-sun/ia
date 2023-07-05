@@ -89,12 +89,23 @@ nav ul li a {
 
 /* Estilos do infográfico */
 #exemple {
+    background-color: #f9f9f9;
     margin: 1rem;
 }
 
 #exemple h2 {
     font-size: 2rem;
     margin-bottom: 2rem;
+}
+
+#data {
+  background-color: #f9f9f9;
+  margin: 1rem;
+}
+
+#data h2 {
+  font-size: 2rem;
+  margin-bottom: 2rem;
 }
 
 .application-list {
