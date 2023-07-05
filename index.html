@@ -9,17 +9,105 @@
     <body>
         <header>
             <h1>Infográfico sobre Inteligência Artificial</h1>
+            <img src="header-image.png" alt="Ilustração de IA" />
         </header>
 
         <section id="introduction">
-            <h2>Introdução sobre Inteligência Artificial</h2>
-            <p>Uma breve explicação sobre IA...</p>
+            <h2>Introdução à Inteligência Artificial</h2>
+            <p>Uma breve explicação sobre a IA...</p>
             <div class="chart-container">
                 <canvas id="growth-chart"></canvas>
             </div>
             <div class="infographic">
-                <!-- Seu infográfico sobre IA -->
+                <h3>Infográfico sobre Inteligência Artificial</h3>
+                <p>
+                    A IA está revolucionando diversas áreas, como saúde,
+                    educação e negócios. Veja alguns insights interessantes:
+                </p>
+                <ul>
+                    <li>
+                        80% dos executivos acreditam que a IA proporcionará
+                        vantagem competitiva para suas empresas.
+                    </li>
+                    <li>
+                        As principais aplicações da IA incluem análise de dados,
+                        processamento de linguagem natural e visão
+                        computacional.
+                    </li>
+                    <li>
+                        A IA tem o potencial de automatizar tarefas repetitivas
+                        e melhorar a eficiência operacional.
+                    </li>
+                    <li>
+                        Estima-se que o mercado de IA atingirá US$ 190 bilhões
+                        até 2025.
+                    </li>
+                </ul>
             </div>
+        </section>
+
+        <section id="exemple">
+            <h2>Exemplos de Aplicações de IA</h2>
+            <ul class="application-list">
+                <li>
+                    <img
+                    src="https://cdn-icons-png.flaticon.com/512/4003/4003911.png"
+                    alt="Ícone de Saúde" />
+                    <p>Aplicações de IA na área da saúde.</p>
+                </li>
+                <li>
+                    <img src="https://cdn-icons-png.flaticon.com/512/3197/3197967.png" alt="Ícone de Educação" />
+                    <p>Aplicações de IA na área da educação.</p>
+                </li>
+                <li>
+                    <img src="data:image/png;base64,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" alt="Ícone de Negócios" />
+                    <p>Aplicações de IA na área de negócios.</p>
+                </li>
+            </ul>
+        </section>
+
+        <section id="data">
+            <h2>Dados e Estatísticas sobre IA</h2>
+            <p>Algumas estatísticas relevantes sobre o crescimento da IA:</p>
+            <ul>
+                <li>
+                    Número de patentes relacionadas à IA aumentou 50% nos
+                    últimos 2 anos.
+                </li>
+                <li>
+                    Previsão de que o mercado de IA atingirá 100 bilhões de
+                    dólares até o final do ano.
+                </li>
+                <li>
+                    Mais de 60% das empresas adotaram alguma forma de IA em suas
+                    operações.
+                </li>
+            </ul>
+        </section>
+
+        <section id="tip">
+            <h2>Dicas para Implementar Projetos de IA</h2>
+            <p>
+                Algumas dicas para implementar projetos de IA de forma eficaz:
+            </p>
+            <ol>
+                <li>
+                    Defina claramente os objetivos do projeto e os problemas a
+                    serem resolvidos.
+                </li>
+                <li>
+                    Garanta a qualidade e a integridade dos dados utilizados no
+                    treinamento dos modelos.
+                </li>
+                <li>
+                    Escolha algoritmos adequados às necessidades do projeto e ao
+                    tipo de dados.
+                </li>
+                <li>
+                    Realize testes rigorosos e monitore continuamente o
+                    desempenho dos modelos de IA.
+                </li>
+            </ol>
         </section>
 
         <!-- Outras seções -->
