@@ -1,33 +1,36 @@
 document.addEventListener("DOMContentLoaded", function () {
-    // Importe o contexto do canvas
     var ctx = document.getElementById("growth-chart").getContext("2d");
 
-    // Defina os dados do gráfico
+    // Função para formatar os números com "mi" e "bi"
+    function formatNumber(num) {
+        if (num >= 1000000000) {
+            return (num / 1000000000).toFixed(1) + "bi";
+        } else if (num >= 1000000) {
+            return (num / 1000000).toFixed(1) + "mi";
+        }
+        return num;
+    }
+
     var data = {
         labels: [
+            "outubro",
+            "novembro",
+            "dezembro",
             "Janeiro",
             "Fevereiro",
             "Março",
             "Abril",
-            "Maio",
-            "Junho",
-            "Julho",
-            "Agosto",
         ],
         datasets: [
             {
-                label: "informação A",
-                data: [30, 20, 30, 40, 5, 60, 10, 100],
-                backgroundColor: "rgba(75, 192, 192, 0.2)", // Cor de fundo do gráfico
-                borderColor: "rgba(75, 192, 192, 1)", // Cor da linha do gráfico
-                borderWidth: 2, // Largura da linha do gráfico
-            },
-            {
-                label: "informação B",
-                data: [4, 25, 0, 40, 5, 6, 10, 20],
-                backgroundColor: "rgba(75, 192, 192, 0.2)", // Cor de fundo do gráfico
-                borderColor: "rgba(5, 192, 92, 1)", // Cor da linha do gráfico
-                borderWidth: 2, // Largura da linha do gráfico
+                label: "numero de acessos no chat openai",
+                data: [
+                    0, 152700000, 266000000, 616000000, 1000000000, 1600000000,
+                    1800000000,
+                ],
+                backgroundColor: "rgba(75, 192, 192, 0.2)",
+                borderColor: "rgba(75, 192, 192, 1)",
+                borderWidth: 2,
             },
         ],
     };
@@ -39,6 +42,21 @@ document.addEventListener("DOMContentLoaded", function () {
         scales: {
             y: {
                 beginAtZero: true,
+                ticks: {
+                    callback: function (value, index, values) {
+                        return formatNumber(value);
+                    },
+                },
+            },
+        },
+        plugins: {
+            tooltip: {
+                callbacks: {
+                    label: function (context) {
+                        var value = context.parsed.y;
+                        return formatNumber(value);
+                    },
+                },
             },
         },
     };
