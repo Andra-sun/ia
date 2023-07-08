@@ -106,27 +106,8 @@ nav ul li a {
     margin-bottom: 2rem;
 }
 
-.application-list {
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
-}
 
-.application-list li {
-    display: flex;
-    align-items: center;
-    margin-bottom: 2rem;
-}
 
-.application-list li img {
-    width: 3rem;
-    height: 3rem;
-    margin-right: 1rem;
-}
-
-.application-list li p {
-    font-size: 1rem;
-}
 
 /* Estilos responsivos */
 @media (max-width: 768px) {
@@ -134,3 +115,50 @@ nav ul li a {
         width: 100%;
     }
 }
+
+.application-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.application-list li {
+    margin-bottom: 2rem;
+}
+
+.application-item {
+    display: flex;
+    align-items: center;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.application-item img {
+    width: 3rem;
+    height: 3rem;
+    margin-right: 1rem;
+}
+
+.application-info {
+    flex: 1;
+}
+
+.application-title {
+    font-size: 1rem;
+    margin: 0;
+    font-weight: bold;
+}
+
+.application-description {
+    font-size: 0.9rem;
+    margin: 0;
+    color: #888;
+    display: none;
+}
+
+.application-description.show {
+    display: block;
+}
+
