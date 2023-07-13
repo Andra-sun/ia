@@ -9,6 +9,10 @@ body {
     font-family: "Raleway";
     src: url("font/Raleway-VariableFont_wght.ttf");
 }
+@font-face {
+    font-family: "oswald";
+    src: url("font/Oswald-VariableFont_wght.ttf");
+}
 
 header {
     font-family: "oswald";
