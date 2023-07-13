@@ -1,0 +1,177 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #E9E9E9;
+    font-family: 'Raleway';
+}
+@font-face {
+    font-family: 'Raleway';
+    src: url('font/Raleway-VariableFont_wght.ttf')
+}
+
+header {
+    font-family: 'oswald';
+    color: #E9E9E9;
+    background-color: #0072BB;
+    padding: 20px;
+    display: flex;
+
+}
+header div{
+    display:flex;
+    flex-direction: column;
+}
+header h1{
+    text-align: left;
+    margin: 0;
+}
+#img-ia-header{
+    width: 5rem;
+    height: 6rem;
+    margin-top: 1rem;
+}
+
+
+.inicio {
+    background-color: #6EC6FF;
+    padding: 20px;
+    border-radius: 1rem;
+    border-style: groove;
+    margin-top: -1rem;
+}
+
+.inicio h2 {
+    color: #333333;
+    font-size: 1.016rem;
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 1rem;
+    text-transform: uppercase;
+}
+.inicio p {
+    color: #222222;
+}
+.inicio img {
+    max-width: 100%;
+    margin-bottom: 10px;
+}
+
+
+
+section {
+    padding: 40px;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+/* Estilos específicos para cada seção */
+#introduction {
+    background-color: #f9f9f9;
+}
+
+/* Estilos do infográfico */
+#exemple {
+    background-color: #f9f9f9;
+}
+
+#exemple h2 {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+}
+
+#data {
+    background-color: #f9f9f9;
+}
+
+#data h2 {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+}
+
+
+.chart-container {
+    width: 80%;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+/* Estilos responsivos */
+@media (max-width: 768px) {
+    .application-list li {
+        width: 100%;
+    }
+}
+
+.application-list {
+    background-color: aqua;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.application-list li {
+    display: flex;
+    margin-bottom: 2rem;
+    margin-right: 1rem;
+}
+
+.application-item {
+    background-color: blueviolet;
+    display: flex;
+    align-items: center;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 10px;
+    cursor: pointer;
+    height: 4rem;
+}
+
+.application-item img {
+    width: 3rem;
+    height: 3rem;
+    margin-bottom: 1rem;
+}
+
+.application-info {
+    flex: 1;
+}
+
+.application-title {
+    font-size: 1rem;
+    margin: 0;
+    font-weight: bold;
+}
+
+.application-description {
+    font-size: 0.9rem;
+    margin: 0;
+    color: #888;
+    display: none;
+}
+
+.application-description.show {
+    display: block;
+}
+
