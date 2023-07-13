@@ -24,7 +24,6 @@ header {
 header div {
     display: flex;
     flex-direction: column;
-    margin-right:1.5rem;
 }
 header h1 {
     text-align: left;
@@ -37,6 +36,7 @@ header p {
 #img-ia-header {
     width: 5rem;
     height: 6rem;
+    margin-left: 2rem;
 }
 
 .inicio {
