@@ -220,11 +220,13 @@ nav ul li a {
 
 /* parte de bianca */
 #historia {
-    background-color: #0072bb;
-    border-radius: 0.2rem;
+    margin: 0.5rem;
+    background-color: #2471A3;
+    border-radius: 0.4rem;
     display: flex;
 }
 #historia div {
+    margin-top: -1.2rem;
     padding: 1rem;
     flex-direction: column;
 }
