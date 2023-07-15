@@ -1,12 +1,10 @@
 document.addEventListener("DOMContentLoaded", function () {
-    const applicationItems = document.querySelectorAll(".application-item");
+    const items = document.querySelectorAll(".application-item");
 
-    applicationItems.forEach(function (item) {
-        const title = item.querySelector(".application-title");
-        const description = item.querySelector(".application-description");
-
-        title.addEventListener("click", function () {
-            description.classList.toggle("show");
+    items.forEach(function (item) {
+        item.addEventListener("click", function () {
+            const info = item.querySelector(".application-info");
+            info.classList.toggle("show");
         });
     });
 });

@@ -3,8 +3,11 @@ body {
     margin: 0;
     padding: 0;
     background-color: #e9e9e9;
-    font-family: "Raleway";
+    font-family: "raleway medium";
+    color: #333333;
 }
+
+/* ---------------------------------------------- */
 @font-face {
     font-family: "Raleway";
     src: url("font/Raleway-VariableFont_wght.ttf");
@@ -13,7 +16,9 @@ body {
     font-family: "oswald";
     src: url("font/Oswald-VariableFont_wght.ttf");
 }
+/* ---------------------------------------------- */
 
+/* titulo */
 header {
     font-family: "oswald";
     color: #e9e9e9;
@@ -33,103 +38,220 @@ header p {
     font-size: 1.4rem;
     margin: 0;
 }
-#img-ia-header {
+header img {
     width: 5rem;
     height: 6rem;
-    margin-left: 2rem;
 }
+/* titulo */
 
+/* ---------------------------------------------- */
+
+/* oq é */
+#introduction {
+    font-family: "raleway medium";
+    margin: 1rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
 .inicio {
     background-color: #6ec6ff;
-    padding: 20px;
+    padding: 1rem;
     border-radius: 1rem;
     border-style: groove;
-    margin-top: -1rem;
 }
-
 .inicio h2 {
     color: #333333;
-    font-size: 1.016rem;
+    font-size: 1.1rem;
     text-align: center;
     margin-top: 0;
     margin-bottom: 1rem;
     text-transform: uppercase;
 }
 .inicio p {
-    color: #222222;
+    color: #333333;
 }
-.inicio img {
-    max-width: 100%;
-    margin-bottom: 10px;
-}
+/* oq é */
+
+/* ---------------------------------------------- */
 
 .linha-reta {
     border-bottom: 1px solid rgb(163, 163, 163);
 }
-  
 
-section {
-    padding: 40px;
-}
+/* ---------------------------------------------- */
 
+/* final */
 footer {
-    background-color: #002C52;
+    background-color: #002c52;
     color: #e9e9e9;
-    padding: 20px;
+    padding: 1rem;
     text-align: center;
+    font-size: 0.8rem;
 }
-
 nav ul {
     list-style: none;
     padding: 0;
     margin: 0;
 }
-
 nav ul li {
     display: inline-block;
     margin-right: 10px;
 }
-
 nav ul li a {
     color: #fff;
     text-decoration: none;
 }
+/* final */
 
-/* Estilos específicos para cada seção */
-#introduction {
-    background-color: #f9f9f9;
+/* ---------------------------------------------- */
+
+/* exemplo-bom */
+#exemplo-bom {
+    margin: 1rem;
+    margin-top: 2rem;
 }
 
-/* Estilos do infográfico */
-#exemple {
-    background-color: #f9f9f9;
-}
-
-#exemple h2 {
-    font-size: 2rem;
+#exemplo-bom h2 {
+    font-style: normal;
+    font-size: 1.3rem;
+    font-family: "oswald semibold";
     margin-bottom: 2rem;
 }
 
-#data {
+.lista-avanco {
+    display: flex;
+    flex-wrap: wrap;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.application-item {
+    /* flex: 0 0 calc(33.33% - 1rem); 3 items per row */
+    background-color: #6ec6ff;
+    display: flex;
+    align-items: center;
+    border-radius: 8px;
+    padding: 10px;
+    cursor: pointer;
+    height: 4rem;
+    border-style: dashed;
+    margin: 0.5rem;
+}
+
+.application-item img {
+    width: 3rem;
+    height: 3rem;
+    margin-right: 0.5rem;
+}
+
+.application-info {
+    display: none;
+    background-color: #6ec6ff;
+    border-radius: 8px;
+    padding: 10px;
+    margin-top: 1rem;
+}
+
+.application-info.show {
+    display: block;
+}
+
+.application-title {
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+.application-description {
+    font-size: 0.9rem;
+}
+/* exemplo-bom */
+
+/* ---------------------------------------------- */
+
+/* exemplo-ruim */
+#exemplo-ruim {
+    margin: 1rem;
+    margin-top: 2rem;
+}
+
+#exemplo-ruim h2 {
+    font-style: normal;
+    font-size: 1.3rem;
+    font-family: "oswald semibold";
+    margin-bottom: 2rem;
+}
+
+.lista-retrocesso {
+    display: flex;
+    flex-wrap: wrap;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.application-item {
+    /* flex: 0 0 calc(33.33% - 1rem); 3 items per row */
+    background-color: #6ec6ff;
+    display: flex;
+    align-items: center;
+    border-radius: 8px;
+    padding: 10px;
+    cursor: pointer;
+    height: 4rem;
+    border-style: dashed;
+    margin: 0.5rem;
+}
+
+.application-item img {
+    width: 3rem;
+    height: 3rem;
+    margin-right: 0.5rem;
+}
+
+.application-info {
+    display: none;
+    background-color: #6ec6ff;
+    border-radius: 8px;
+    padding: 10px;
+    margin-top: 1rem;
+}
+
+.application-info.show {
+    display: block;
+}
+
+.application-title {
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+.application-description {
+    font-size: 0.9rem;
+}
+/* exemplo-ruim */
+
+/* ---------------------------------------------- */
+
+/* parte de bianca */
+#historia {
     background-color: #0081d1ad;
     margin: 0;
     display: flex;
     flex-direction: column;
     padding: 1rem;
 }
-
-#data h2 {
+#historia h2 {
     text-transform: uppercase;
     margin-top: 0;
     color: #333333;
     text-align: center;
 }
-#data p {
+#historia p {
     margin-top: 0;
     color: #333333;
     text-align: center;
 }
-
 
 .chart-container {
     width: 80%;
@@ -137,60 +259,6 @@ nav ul li a {
     margin: 0 auto;
 }
 
-/* Estilos responsivos */
-@media (max-width: 768px) {
-    .application-list li {
-        width: 100%;
-    }
-}
-
-.application-list {
-    background-color: aqua;
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
-}
-
-.application-list li {
-    display: flex;
-    margin-bottom: 2rem;
-    margin-right: 1rem;
-}
-
-.application-item {
-    background-color: blueviolet;
-    display: flex;
-    align-items: center;
-    border: 1px solid #ccc;
-    border-radius: 8px;
-    padding: 10px;
-    cursor: pointer;
-    height: 4rem;
-}
-
-.application-item img {
-    width: 3rem;
-    height: 3rem;
-    margin-bottom: 1rem;
-}
-
-.application-info {
-    flex: 1;
-}
-
-.application-title {
-    font-size: 1rem;
-    margin: 0;
-    font-weight: bold;
-}
-
-.application-description {
-    font-size: 0.9rem;
-    margin: 0;
-    color: #888;
-    display: none;
-}
-
-.application-description.show {
-    display: block;
+#tip, #fim {
+    padding: 2rem;
 }
