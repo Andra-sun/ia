@@ -26,7 +26,7 @@ body {
 header {
     font-family: "oswald";
     color: #e9e9e9;
-    background-color: #002C52;
+    background-color: #0072bb;
     padding: 20px;
     display: flex;
 }
@@ -58,6 +58,10 @@ header img {
     margin-top: 2rem;
     margin-bottom: 2rem;
 }
+#introduction img{
+    width: 7rem;
+    height: 9rem;
+}
 .inicio {
     text-align: right;
 }
@@ -76,6 +80,7 @@ header img {
 /* ---------------------------------------------- */
 
 .linha-reta {
+    margin: 3rem;
     border-bottom: 1px solid rgb(163, 163, 163);
 }
 
@@ -108,18 +113,18 @@ nav ul li a {
 
 /* exemplo-bom */
 #exemplo-bom {
-    margin: 1rem;
-    margin-top: 2rem;
+    margin: 0;
 }
 
 #exemplo-bom h2 {
-    font-size: 1.3rem;
+    margin: 0.4rem;
     font-family: "oswald semibold";
-    margin-bottom: 2rem;
+    text-align: center;
 }
 
 .lista-avanco {
     background-color: deeppink;
+    align-items: center;
     display: flex;
     flex-wrap: wrap;
     list-style-type: none;
@@ -128,32 +133,25 @@ nav ul li a {
 }
 
 .application-item {
-    /* flex: 0 0 calc(33.33% - 1rem);  */
     background-color: #6ec6ff;
     display: flex;
     align-items: center;
-    padding: 10px;
+    padding: 0.6rem;
     cursor: pointer;
     height: 4rem;
-    width: 9.53rem;
-    border-style: dashed;
+    width: 10.3rem;
     border-radius: 1rem;
+    margin: 1rem;
 }
 
 .application-item img {
+    margin-right: 0.4rem;
     width: 3rem;
     height: 3rem;
 }
 
-/* .application-info {
-    background-color: #6ec6ff;
-    border-radius: 8px;
-    padding: 10px;
-    margin-top: 1rem;
-} */
-
 .application-description.show {
-    display: flex;
+    display: block;
 }
 
 .application-title {
@@ -170,25 +168,7 @@ nav ul li a {
 /* ---------------------------------------------- */
 
 /* exemplo-ruim */
-#exemplo-ruim {
-    margin: 1rem;
-    margin-top: 2rem;
-}
 
-#exemplo-ruim h2 {
-    font-style: normal;
-    font-size: 1.3rem;
-    font-family: "oswald semibold";
-    margin-bottom: 2rem;
-}
-
-.lista-retrocesso {
-    display: flex;
-    flex-wrap: wrap;
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
-}
 
 /* exemplo-ruim */
 
