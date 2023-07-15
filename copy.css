@@ -8,7 +8,7 @@ body {
 }
 
 ::-webkit-scrollbar {
-    width: 0rem; 
+    width: 0rem;
 }
 
 /* ---------------------------------------------- */
@@ -58,7 +58,7 @@ header img {
     margin-top: 2rem;
     margin-bottom: 2rem;
 }
-#introduction img{
+#introduction img {
     width: 7rem;
     height: 9rem;
 }
@@ -168,6 +168,58 @@ nav ul li a {
 /* ---------------------------------------------- */
 
 /* exemplo-ruim */
+#exemplo-ruim {
+    margin: 0;
+}
+
+#exemplo-ruim h2 {
+    margin: 0.4rem;
+    font-family: "oswald semibold";
+    text-align: center;
+}
+
+.lista-retrocesso {
+    background-color: rgb(4, 255, 79);
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+.ruim-application-item {
+    background-color: #002C52;
+    color: #e9e9e9;
+    display: flex;
+    align-items: center;
+    padding: 0.6rem;
+    cursor: pointer;
+    height: 4rem;
+    width: 10.3rem;
+    border-radius: 1rem;
+    margin: 1rem;
+}
+
+.ruim-application-item img {
+    margin-right: 0.4rem;
+    width: 3rem;
+    height: 3rem;
+}
+
+.ruim-application-description.show {
+    display: block;
+}
+
+.ruim-application-title {
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+.ruim-application-description {
+    display: none;
+    font-size: 0.9rem;
+}
+
 
 
 /* exemplo-ruim */
