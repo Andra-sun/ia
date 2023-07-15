@@ -59,8 +59,8 @@ header img {
     margin-bottom: 2rem;
 }
 #introduction img {
-    width: 7rem;
-    height: 9rem;
+    width: 6rem;
+    height: 8rem;
 }
 .inicio {
     text-align: right;
@@ -123,7 +123,6 @@ nav ul li a {
 }
 
 .lista-avanco {
-    background-color: deeppink;
     align-items: center;
     display: flex;
     flex-wrap: wrap;
@@ -142,6 +141,7 @@ nav ul li a {
     width: 10.3rem;
     border-radius: 1rem;
     margin: 1rem;
+    border-style: groove;
 }
 
 .application-item img {
@@ -174,7 +174,6 @@ nav ul li a {
 }
 
 .lista-retrocesso {
-    background-color: rgb(4, 255, 79);
     align-items: center;
     display: flex;
     flex-wrap: wrap;
@@ -193,6 +192,7 @@ nav ul li a {
     width: 10.3rem;
     border-radius: 1rem;
     margin: 1rem;
+    border-style:groove;
 }
 
 .ruim-application-item img {
