@@ -125,7 +125,7 @@ header img {
     display: none;
 }
 .fotinha {
-    display: flex;
+    display: none;
     width: 15rem;
     padding-left: 1rem;
     margin-top: -11rem;
