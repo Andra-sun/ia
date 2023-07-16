@@ -58,16 +58,19 @@ const boxesDiv = document.querySelectorAll(".divisoes");
 boxesDiv.forEach((boxDiv) => {
     boxDiv.addEventListener("click", () => {
         const dvParagraph = boxDiv.querySelector(".divisao-corpo");
+        const dvImage = boxDiv.querySelector(".fotinha");
         const isParagraphVisible = dvParagraph.style.display === "block";
 
         if (isParagraphVisible) {
             dvParagraph.style.display = "none";
+            dvImage.style.display = "none";
             boxDiv.style.height = "4rem";
-            boxDiv.style.width = "20rem"; // Defina a largura como 100% para ocupar todo o espaço disponível
+            boxDiv.style.width = "20rem";
         } else {
             dvParagraph.style.display = "block";
+            dvImage.style.display = "block";
             boxDiv.style.height = "auto";
-            boxDiv.style.width = "20rem"; // Defina a largura como 100% para ocupar todo o espaço disponível
+            boxDiv.style.width = "20rem";
         }
     });
 });

@@ -124,6 +124,14 @@ header img {
 .divisao-corpo {
     display: none;
 }
+.fotinha {
+    display: flex;
+    width: 15rem;
+    padding-left: 1rem;
+    margin-top: -11rem;
+    margin-left: 8rem;
+}
+
 
 /* oq é */
 
