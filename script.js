@@ -27,11 +27,13 @@ boxes.forEach((box) => {
 // Obtém todas as caixas azuis com a classe "application-item"
 const boxesRuim = document.querySelectorAll(".ruim-application-item");
 
-// Itera sobre todas as caixas azuis e adiciona um evento de clique a cada uma
+// Itera sobre todas as caixas azuis-escuras e adiciona um evento de clique a cada uma
 boxesRuim.forEach((boxr) => {
     boxr.addEventListener("click", () => {
         // Obtém o parágrafo dentro da caixa azul clicada
-        const ruimparagraph = boxr.querySelector(".ruim-application-description");
+        const ruimparagraph = boxr.querySelector(
+            ".ruim-application-description"
+        );
 
         // Verifica se o parágrafo está visível
         const ruimisVisible = ruimparagraph.style.display === "block";
@@ -46,6 +48,26 @@ boxesRuim.forEach((boxr) => {
             ruimparagraph.style.display = "block";
             boxr.style.height = "auto";
             boxr.style.width = "auto"; // Define a largura como 100% para ocupar todo o espaço disponível
+        }
+    });
+});
+
+// Obtém todas as caixas azuis com a classe "application-item"
+const boxesDiv = document.querySelectorAll(".divisoes");
+
+boxesDiv.forEach((boxDiv) => {
+    boxDiv.addEventListener("click", () => {
+        const dvParagraph = boxDiv.querySelector(".divisao-corpo");
+        const isParagraphVisible = dvParagraph.style.display === "block";
+
+        if (isParagraphVisible) {
+            dvParagraph.style.display = "none";
+            boxDiv.style.height = "4rem";
+            boxDiv.style.width = "20"; // Defina a largura como 100% para ocupar todo o espaço disponível
+        } else {
+            dvParagraph.style.display = "block";
+            boxDiv.style.height = "auto";
+            boxDiv.style.width = "20rem"; // Defina a largura como 100% para ocupar todo o espaço disponível
         }
     });
 });

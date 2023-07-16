@@ -55,10 +55,9 @@ header img {
 #introduction {
     display: flex;
     margin: 1rem;
-    margin-top: 2rem;
-    margin-bottom: 2rem;
 }
 #introduction img {
+    margin-top: 5rem;
     width: 6rem;
     height: 8rem;
 }
@@ -68,19 +67,85 @@ header img {
 .inicio h2 {
     color: #333333;
     font-size: 1.3rem;
-    margin-top: 0;
-    margin-bottom: 1rem;
     text-transform: uppercase;
 }
 .inicio p {
     color: #333333;
 }
+
+.parte2 {
+    display: flex;
+    flex-direction: column;
+
+}
+#hs {
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    background-color: #6ab7fa31;
+    border-radius: 0.4rem;
+}
+#hs h2, #hs h3{
+    margin: 1.3rem;
+}
+.parte2 h2 {
+    margin-bottom: 0rem;
+    text-transform: uppercase;
+    color: #333333;
+}
+.parte2 p {
+    color: #333333;
+}
+
+.lista-de-divisoes {
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.divisoes {
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25) inset;
+    background-color: #6ec6ff;
+    align-items: center;
+    text-align: center;
+    padding: 0.6rem;
+    cursor: pointer;
+    border-radius: 1rem;
+    margin: 1rem;
+    width: 20rem;
+}
+
+.divisao-titu {
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+.divisao-corpo {
+    display: none;
+}
+
 /* oq é */
 
 /* ---------------------------------------------- */
 
 .linha-reta {
     margin: 3rem;
+    border-bottom: 1px solid rgb(163, 163, 163);
+}
+.linha-reta1 {
+    margin-left: 3rem;
+    margin-right: 3rem;
+    margin-bottom: 1rem;
+    margin-top: 3rem;
+    border-bottom: 1px solid rgb(163, 163, 163);
+}
+.linha-reta2 {
+    margin-left: 3rem;
+    margin-right: 3rem;
+    margin-bottom: 1rem;
+    margin-top: 1.5rem;
     border-bottom: 1px solid rgb(163, 163, 163);
 }
 
@@ -155,7 +220,7 @@ nav ul li a {
     font-weight: bold;
 }
 
-.application-description{
+.application-description {
     display: none;
 }
 /* exemplo-bom */
@@ -192,7 +257,7 @@ nav ul li a {
     width: 10.3rem;
     border-radius: 1rem;
     margin: 1rem;
-    border-style:groove;
+    border-style: groove;
 }
 
 .ruim-application-item img {
@@ -220,8 +285,9 @@ nav ul li a {
 
 /* parte de bianca */
 #historia {
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
     margin: 0.5rem;
-    background-color: #2471A3;
+    background-color: #2471a3;
     border-radius: 0.4rem;
     display: flex;
 }
