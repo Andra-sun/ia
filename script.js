@@ -63,7 +63,7 @@ boxesDiv.forEach((boxDiv) => {
         if (isParagraphVisible) {
             dvParagraph.style.display = "none";
             boxDiv.style.height = "4rem";
-            boxDiv.style.width = "20"; // Defina a largura como 100% para ocupar todo o espaço disponível
+            boxDiv.style.width = "20rem"; // Defina a largura como 100% para ocupar todo o espaço disponível
         } else {
             dvParagraph.style.display = "block";
             boxDiv.style.height = "auto";
