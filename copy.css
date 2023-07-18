@@ -334,3 +334,6 @@ nav ul li a {
 #fim {
     padding: 2rem;
 }
+#tip li{
+    list-style:decimal ;
+}
