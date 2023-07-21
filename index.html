@@ -5,6 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Infográfico sobre Inteligência Artificial</title>
         <link rel="stylesheet" href="copy.css" />
+        <link rel="stylesheet" href="falar2.css" />
     </head>
     <body>
         <header>
@@ -446,6 +447,23 @@
 
         <div class="linha-reta"></div>
 
+        <select id="voiceList"></select
+        ><br /><br />
+        <input id="txtInput" /><br /><br />
+        <button id="btnFalar">falar!</button>
+
+        <div class="linha-reta"></div>
+
+        <div class="main">
+            <textarea id="inputText" placeholder="Enter text"> </textarea>
+
+            <button id="convertBtn">Convert to Audio</button>
+        </div>
+
+        <div class="output"><audio id="audioPlayer" controls></audio></div>
+
+        <div class="linha-reta"></div>
+
         <section id="tip">
             <h2>
                 Conheça alguns exemplos da aplicação da inteligência artificial
@@ -579,5 +597,8 @@
         <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
         <script src="charts.js"></script>
         <script src="script.js"></script>
+        <script src="voice1.js"></script>
+        <script src="voice2.js"></script>
+        
     </body>
 </html>
