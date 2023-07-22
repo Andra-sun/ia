@@ -149,6 +149,7 @@ header img:hover{
     width: 10rem;
     height: 6.5rem;
     transition: 0.5s;
+    border-radius: 0.5rem;
 }
 
 
