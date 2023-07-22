@@ -74,3 +74,29 @@ boxesDiv.forEach((boxDiv) => {
         }
     });
 });
+
+// Obtém todas as caixas azuis com a classe "pedro-application-item"
+const boxesPedro = document.querySelectorAll(".pedro-application-item");
+
+// Itera sobre todas as caixas azuis-escuras e adiciona um evento de clique a cada uma
+boxesPedro.forEach((item) => {
+    item.addEventListener("click", () => {
+        // Obtém o parágrafo dentro da caixa azul clicada
+        const description = item.querySelector(".pedro-application-description");
+
+        // Verifica se o parágrafo está visível
+        const isVisible = description.style.display === "block";
+
+        if (isVisible) {
+            // Se o parágrafo estiver visível, oculta-o e redefine a altura e largura da caixa azul
+            description.style.display = "none";
+            item.style.height = "4rem"; // Defina a altura desejada inicialmente
+            item.style.width = "10.3rem"; // Defina a largura desejada inicialmente
+        } else {
+            // Se o parágrafo estiver oculto, exibe-o e expande a caixa azul
+            description.style.display = "block";
+            item.style.height = "auto";
+            item.style.width = "auto"; // Define a largura como 100% para ocupar todo o espaço disponível
+        }
+    });
+});
