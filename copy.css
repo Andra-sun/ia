@@ -131,10 +131,11 @@ header img:hover{
     border-radius: 1rem;
     margin: 1.5rem;
     width: 19rem;
+    transition: 0.5s;
 }
 
 .divisao-titu {
-    font-size: 1rem;
+    font-size: 1.5rem;
     font-weight: bold;
 }
 
@@ -143,9 +144,11 @@ header img:hover{
     margin: 1rem;
 }
 .dvia img{
-    margin-top: 1rem;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    margin-top: 0.5rem;
     width: 10rem;
-    height: 7rem;
+    height: 6.5rem;
+    transition: 0.5s;
 }
 
 
@@ -233,8 +236,8 @@ nav ul li a {
     margin: 1rem;
     transition: transform 0.3s ease;
 }
-.application-item:hover {
-    transform: scale(1.1);
+.application-item:not(.description-visible):hover {
+    transform: scale(1.1); /* Apply the transition only when the description is not visible */
 }
 
 .application-item img {
@@ -288,9 +291,11 @@ nav ul li a {
     margin: 1rem;
     transition: transform 0.3s ease;
 }
-.ruim-application-item:hover {
+
+.ruim-application-item:not(.description-visible):hover {
     transform: scale(1.1);
 }
+
 .ruim-application-item img {
     margin-right: 0.4rem;
     width: 3rem;
@@ -386,7 +391,7 @@ nav ul li a {
     margin: 1rem;
     transition: transform 0.3s ease;
 }
-.pedro-application-item:hover {
+.pedro-application-item:not(.description-visible):hover {
     transform: scale(1.1);
 }
 
