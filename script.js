@@ -63,7 +63,7 @@ boxesDiv.forEach((boxDiv) => {
             dvImage.style.marginTop = "-3rem";
             boxDiv.style.height = "auto";
             boxDiv.style.width = "19rem";
-            boxDiv.style.margin = "2.5rem";
+            boxDiv.style.marginTop = "2.5rem";
         }
     });
 });
