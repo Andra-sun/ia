@@ -64,15 +64,12 @@ boxesDiv.forEach((boxDiv) => {
         if (isParagraphVisible) {
             dvParagraph.style.display = "none";
             boxDiv.style.width = "19rem";
-            boxDiv.style.margin = "1.5rem"
-            dvImage.style.marginTop = "1rem";
+            dvImage.style.marginTop = "0rem";
         } else {
             dvParagraph.style.display = "block";
             dvImage.style.marginTop = "-3rem";
             boxDiv.style.height = "auto";
             boxDiv.style.width = "19rem";
-            boxDiv.style.margin = "2.5rem"
-
         }
     });
 });
@@ -100,5 +97,11 @@ boxesPedro.forEach((item) => {
             item.style.height = "auto";
             item.style.width = "auto"; // Define a largura como 100% para ocupar todo o espaço disponível
         }
+    });
+});
+
+boxes.forEach((box) => {
+    box.addEventListener("click", () => {
+        box.classList.toggle("clicked");
     });
 });
