@@ -64,12 +64,15 @@ boxesDiv.forEach((boxDiv) => {
         if (isParagraphVisible) {
             dvParagraph.style.display = "none";
             boxDiv.style.width = "19rem";
-            dvImage.style.marginTop = "0rem";
+            boxDiv.style.margin = "1.5rem"
+            dvImage.style.marginTop = "1rem";
         } else {
             dvParagraph.style.display = "block";
             dvImage.style.marginTop = "-3rem";
             boxDiv.style.height = "auto";
             boxDiv.style.width = "19rem";
+            boxDiv.style.margin = "2.5rem"
+
         }
     });
 });

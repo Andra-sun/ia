@@ -129,7 +129,7 @@ header img:hover{
     padding: 0.6rem;
     cursor: pointer;
     border-radius: 1rem;
-    margin: 2rem;
+    margin: 1.5rem;
     width: 19rem;
 }
 
@@ -143,13 +143,11 @@ header img:hover{
     margin: 1rem;
 }
 .dvia img{
+    margin-top: 1rem;
     width: 10rem;
     height: 7rem;
 }
-#raca-1{
-    height: 9rem;
-    width: 9rem;
-}
+
 
 /* oq é */
 
