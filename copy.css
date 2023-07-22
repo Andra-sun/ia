@@ -129,8 +129,8 @@ header img:hover{
     padding: 0.6rem;
     cursor: pointer;
     border-radius: 1rem;
-    margin: 1rem;
-    width: 20rem;
+    margin: 2rem;
+    width: 19rem;
 }
 
 .divisao-titu {
@@ -142,12 +142,13 @@ header img:hover{
     display: none;
     margin: 1rem;
 }
-.fotinha {
-    display: none;
-    width: 15rem;
-    padding-left: 1rem;
-    margin-top: -11rem;
-    margin-left: 8rem;
+.dvia img{
+    width: 10rem;
+    height: 7rem;
+}
+#raca-1{
+    height: 9rem;
+    width: 9rem;
 }
 
 /* oq é */
@@ -388,17 +389,13 @@ nav ul li a {
     transition: transform 0.3s ease;
 }
 .pedro-application-item:hover {
-    transform: scale(1.2);
+    transform: scale(1.1);
 }
 
 .pedro-application-item img {
     margin-right: 1rem;
     width: 3rem;
     height: 3rem;
-    transition: transform 0.3s ease;
-}
-.pedro-application-item img:hover {
-    transform: scale(1.4);
 }
 
 .pedro-application-description.show {
@@ -431,12 +428,12 @@ nav ul li a {
 
 .chart-container {
     width: 80%;
-    padding: 2rem;
     max-width: 600px;
     margin: 0 auto;
 }
 
 .grafico {
+    padding: 1rem;
     margin-top: 3rem;
     display: flex;
     flex-direction: column;
@@ -445,6 +442,12 @@ nav ul li a {
     color: #333333;
     border-radius: 1rem;
     box-shadow: 2px 4px 4px 2px rgba(0, 0, 0, 0.25) inset;
+}
+.grafico h4{
+    margin-bottom: 0;
+}
+.grafico h5{
+    margin-top: 0.5rem;
 }
 .titu-fim {
     display: flex;

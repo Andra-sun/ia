@@ -58,19 +58,18 @@ const boxesDiv = document.querySelectorAll(".divisoes");
 boxesDiv.forEach((boxDiv) => {
     boxDiv.addEventListener("click", () => {
         const dvParagraph = boxDiv.querySelector(".divisao-corpo");
-        const dvImage = boxDiv.querySelector(".fotinha");
+        const dvImage = boxDiv.querySelector(".raca");
         const isParagraphVisible = dvParagraph.style.display === "block";
 
         if (isParagraphVisible) {
             dvParagraph.style.display = "none";
-            dvImage.style.display = "none";
-            boxDiv.style.height = "4rem";
-            boxDiv.style.width = "20rem";
+            boxDiv.style.width = "19rem";
+            dvImage.style.marginTop = "0rem";
         } else {
             dvParagraph.style.display = "block";
-            dvImage.style.display = "block";
+            dvImage.style.marginTop = "-3rem";
             boxDiv.style.height = "auto";
-            boxDiv.style.width = "20rem";
+            boxDiv.style.width = "19rem";
         }
     });
 });
