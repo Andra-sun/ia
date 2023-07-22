@@ -91,7 +91,7 @@ boxesPedro.forEach((item) => {
             // Se o parágrafo estiver visível, oculta-o e redefine a altura e largura da caixa azul
             description.style.display = "none";
             item.style.height = "4rem"; // Defina a altura desejada inicialmente
-            item.style.width = "10.3rem"; // Defina a largura desejada inicialmente
+            item.style.width = "15rem"; // Defina a largura desejada inicialmente
         } else {
             // Se o parágrafo estiver oculto, exibe-o e expande a caixa azul
             description.style.display = "block";
