@@ -47,16 +47,6 @@ header p {
     margin: 0;
 }
 
-@keyframes girar {
-    from {
-        transform: rotate(0deg); /* Rotação inicial da imagem */
-    }
-    to {
-        transform: rotate(
-            360deg
-        ); /* Rotação final da imagem (uma volta completa) */
-    }
-}
 /* titulo */
 
 /* ---------------------------------------------- */
@@ -449,7 +439,7 @@ nav ul li a {
     margin-bottom: 2rem;
     box-shadow: 4px 7px 7px 7px rgba(0, 0, 0, 0.25);
 }
-#fim p{
+#fim p {
     font-size: 1.7rem;
     margin-top: 0rem;
 }
@@ -468,6 +458,8 @@ nav ul li a {
 }
 
 .grafico {
+    margin-left: 2.5rem;
+    margin-right: 2.5rem;
     padding: 1rem;
     margin-top: 3rem;
     margin-bottom: 2.3rem;
@@ -489,7 +481,6 @@ nav ul li a {
 .grafico h5 {
     margin-top: 0.5rem;
     font-size: 1rem;
-
 }
 .titu-fim {
     display: flex;
@@ -497,16 +488,30 @@ nav ul li a {
     font-size: 2rem;
     text-transform: uppercase;
 }
+/* Estilo normal */
 .titu-fim img {
-    width: 5rem;
-    height: 5rem;
-    transition: transform 0.3s ease; /* Adiciona uma transição suave à animação */
+    align-items: center;
+    justify-content: center;
+    margin-left: 17rem;
+    width: 6rem;
+    height: 6rem;
 }
 
+/* Estilo no hover (quando o mouse passa por cima) */
 .titu-fim img:hover {
-    transform: scale(
-        1.2
-    ); /* A imagem será ampliada em 20% (zoom) quando o mouse estiver sobre ela */
+    /* Define a animação de rotação */
+    animation: girar 2.3s linear infinite;
+}
+
+/* Definição da animação de rotação */
+@keyframes girar {
+    /* A rotação completa será de 360 graus */
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
 }
 
 /* pedro */
