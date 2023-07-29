@@ -1,0 +1,109 @@
+<ul class="lista-de-divisoes">
+                    <li>
+                        <div class="divisoes">
+                            <div class="dvia">
+                                <img
+                                    class="raca"
+                                    src="https://c3.iggcdn.com/indiegogo-media-prod-cld/image/upload/c_fill,w_695,g_auto,q_auto,dpr_2.6,f_auto,h_460/hghn7482ivx7gdwuyb7s"
+                                    alt="noob"
+                                />
+                                <p class="divisao-titu">Restrita ou Fraca</p>
+                            </div>
+                            <p class="divisao-corpo">
+                                <strong
+                                    >Ingredientes da Torta de frango de
+                                    liquidificador </strong
+                                ><br />
+                                2 xícaras (chá) de leite<br />
+                                1 xícara (chá) de óleo<br />
+                                3 ovos<br />
+                                1 cubo de caldo de galinha<br />
+                                Sal a gosto<br />
+                                3 xícaras (chá) de farinha de trigo<br />
+                                1 colher (sopa) de fermento em pó químico<br />
+                                Margarina e farinha de trigo para untar<br />
+                                <br /><strong>Recheio</strong><br />
+                                4 colheres (sopa) de azeite<br />
+                                1 cebola picada<br />
+                                1 tomate picado<br />
+                                2 colheres (sopa) de extrato de tomate<br />
+                                1/2 lata de milho escorrida<br />
+                                3 xícaras (chá) de frango cozido e desfiado<br />
+                                1/2 xícara (chá) de cheiro-verde picado<br />
+                                Sal e pimenta-do-reino a gosto<br />
+                                <br /><strong>Modo de preparo </strong><br />
+                                Para o recheio, em uma panela, aqueça o azeite
+                                em fogo médio e refogue a cebola e o alho por 3
+                                minutos. <br />Adicione o tomate, o extrato, a
+                                ervilha e o milho e refogue por mais 3 minutos.
+                                Acrescente o frango, o cheiro-verde, sal e
+                                pimenta e refogue por mais 5 minutos. <br />
+                                Desligue, misture com o requeijão e deixe
+                                esfriar.
+                                <br />
+                                Bata no liquidificador o leite, o óleo, os ovos
+                                e o sal. <br />Transfira para uma tigela,
+                                acrescente a farinha e o fermento, misturando
+                                com uma colher. <br />Despeje metade da massa em
+                                uma fôrma de 30cm X 22cm untada e enfarinhada,
+                                espalhe o recheio por cima e cubra com o
+                                restante da massa. <br />Polvilhe o queijo
+                                ralado e leve ao forno médio, preaquecido, por
+                                40 minutos ou até dourar. <br />Deixe amornar,
+                                corte em quadrados e sirva.
+                            </p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="divisoes">
+                            <div class="dvia">
+                                <img
+                                    class="raca"
+                                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTpcfiWpt3IJvSli5hnYqMKc8unW-dMU1HyCdgqGgFv1VUnE_xJntXnnrncOJ0HJbqOPec&usqp=CAU"
+                                    alt="forte"
+                                />
+                                <p class="divisao-titu">Geral ou Forte</p>
+                            </div>
+
+                            <p class="divisao-corpo">
+                                Essa é uma IA teórica capaz de realizar qualquer
+                                tarefa intelectual que um ser humano possa
+                                fazer. Ela teria habilidades cognitivas
+                                semelhantes às humanas, como raciocínio,
+                                aprendizado, planejamento, criatividade e
+                                compreensão emocional. A IA geral poderia
+                                aprender, adaptar-se e aplicar seu conhecimento
+                                a uma ampla variedade de tarefas. Atualmente, a
+                                IA forte ainda não foi alcançada, e permanece um
+                                objetivo a longo prazo para os pesquisadores de
+                                IA.
+                            </p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="divisoes">
+                            <div class="dvia">
+                                <img
+                                    class="raca"
+                                    src="https://tynmagazine.com/wp-content/uploads/sites/3/2022/05/inteligencia-artificial-3-930x609.jpg"
+                                    alt="super fortre"
+                                />
+                                <p class="divisao-titu">Super inteligente</p>
+                            </div>
+                            <p class="divisao-corpo">
+                                É hipotética e se refere a uma IA muito mais
+                                avançada e capaz do que a inteligência humana em
+                                todos os aspectos intelectuais. Uma IA super
+                                inteligente seria capaz de superar os humanos em
+                                habilidades de aprendizado, raciocínio,
+                                criatividade, adaptação e solução de problemas.
+                                A IA super inteligente tem implicações
+                                significativas para a sociedade, economia e
+                                ética, já que poderia ultrapassar nossa
+                                compreensão e controle.
+                            </p>
+                        </div>
+                    </li>
+                    <br />
+                </ul>
+            </section>
