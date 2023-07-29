@@ -8,7 +8,7 @@ body {
 }
 
 ::-webkit-scrollbar {
-    width: 0.2rem;
+    width: 0rem;
 }
 
 /* ---------------------------------------------- */
@@ -458,6 +458,8 @@ nav ul li a {
 }
 
 .grafico {
+    margin-left: 2.5rem;
+    margin-right: 2.5rem;
     padding: 1rem;
     margin-top: 3rem;
     margin-bottom: 2.3rem;
