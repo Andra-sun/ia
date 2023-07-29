@@ -210,6 +210,7 @@ nav ul li a {
 }
 
 #exemplo-bom h2 {
+    text-transform: uppercase;
     margin: 0.4rem;
     text-align: center;
     font-size: 2.5rem;
@@ -274,6 +275,7 @@ nav ul li a {
 }
 
 #exemplo-ruim h2 {
+    text-transform: uppercase;
     margin: 0.4rem;
     text-align: center;
     font-size: 2.5rem;
