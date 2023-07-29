@@ -29,24 +29,37 @@ header {
     background-color: #0072bb;
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
     padding: 20px;
-    align-items: center;
+    display: flex;
 }
 header div {
-    align-items: center;
     display: flex;
     flex-direction: column;
-    text-align: center;
 }
 header h1 {
-    font-size: 3.3rem;
-    text-align: center;
+    text-align: left;
     margin: 0;
 }
 header p {
-    font-size: 2.3rem;
+    font-size: 1.4rem;
     margin: 0;
 }
+header img {
+    width: 5rem;
+    height: 6rem;
+    margin-left: 2rem;
+}
+header img:hover{
+    animation: girar 2s infinite;
+}
 
+@keyframes girar {
+    from {
+        transform: rotate(0deg); /* Rotação inicial da imagem */
+    }
+    to {
+        transform: rotate(360deg); /* Rotação final da imagem (uma volta completa) */
+    }
+}
 /* titulo */
 
 /* ---------------------------------------------- */
@@ -61,37 +74,28 @@ header p {
 }
 #introduction h2 {
     color: #333333;
-    font-size: 2.5rem;
+    font-size: 1.3rem;
     text-transform: uppercase;
-    margin-bottom: 0;
 }
 .inicio {
     align-items: center;
     display: flex;
     flex-direction: row;
 }
-.inicio p {
-    font-size: 2rem;
-    text-align: justify;
-}
 .inicio img {
-    width: 15rem;
-    height: 15rem;
-    margin-left: 2.5rem;
-    margin-right: 2.5rem;
+    width: 7rem;
+    height: 7.4rem;
     transition: transform 0.3s ease;
 }
 .inicio img:hover {
     transform: scale(1.1);
 }
-
 .parte2 {
     display: flex;
     flex-direction: column;
     box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.25);
     background-color: #6ab7fa31;
     border-radius: 0.4rem;
-    text-align: center;
 }
 
 #hs h2,
@@ -102,10 +106,6 @@ header p {
     margin-bottom: 0rem;
     text-transform: uppercase;
     color: #333333;
-    font-size: 2.5rem;
-}
-.parte2 h3 {
-    font-size: 1.8rem;
 }
 .parte2 p {
     color: #333333;
@@ -113,9 +113,9 @@ header p {
 
 .lista-de-divisoes {
     align-items: center;
-    justify-content: center;
     display: flex;
-    flex-direction: row;
+    flex-wrap: wrap;
+    flex-direction: column;
     list-style-type: none;
     padding: 0;
     margin: 0;
@@ -129,29 +129,29 @@ header p {
     padding: 0.6rem;
     cursor: pointer;
     border-radius: 1rem;
+    margin: 0.5rem;
     margin-top: 1.5rem;
     width: 19rem;
     transition: 0.5s;
-    margin: 2rem;
 }
 
 .divisao-titu {
-    font-size: 2rem;
+    font-size: 1.5rem;
     font-weight: bold;
 }
 
 .divisao-corpo {
     display: none;
     margin: 1rem;
-    font-size: 1.45rem;
 }
-.dvia img {
+.dvia img{
     margin-top: 0.5rem;
-    width: 6rem;
-    height: 6rem;
+    width: 5rem;
+    height: 5rem;
     transition: 0.5s;
     margin-bottom: -1rem;
 }
+
 
 /* oq é */
 
@@ -185,16 +185,16 @@ footer {
     color: #e9e9e9;
     padding: 1rem;
     text-align: center;
-    font-size: 1.5rem;
+    font-size: 0.8rem;
 }
 nav ul {
     list-style: none;
     padding: 0;
-    margin: 1rem;
+    margin: 0;
 }
 nav ul li {
     display: inline-block;
-    margin-left: 4rem;
+    margin-right: 10px;
 }
 nav ul li a {
     color: #fff;
@@ -211,15 +211,14 @@ nav ul li a {
 
 #exemplo-bom h2 {
     margin: 0.4rem;
+    font-family: "oswald semibold";
     text-align: center;
-    font-size: 2.5rem;
 }
 
 .lista-avanco {
     align-items: center;
-    justify-content: center;
-    flex-wrap: wrap;
     display: flex;
+    flex-wrap: wrap;
     list-style-type: none;
     padding: 0;
     margin: 0;
@@ -230,39 +229,31 @@ nav ul li a {
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
     display: flex;
     align-items: center;
-    justify-content: center;
-    text-align: center;
     padding: 0.6rem;
     cursor: pointer;
-    height: 6rem;
-    width: 24rem;
+    height: 4rem;
+    width: 10.3rem;
     border-radius: 1rem;
     margin: 1rem;
     transition: transform 0.3s ease;
 }
 .application-item:not(.description-visible):hover {
-    transform: scale(
-        1.1
-    ); /* Apply the transition only when the description is not visible */
+    transform: scale(1.1); /* Apply the transition only when the description is not visible */
 }
 
 .application-item img {
-    align-items: center;
-    width: 5rem;
-    height: 5rem;
-    margin: 0.5rem;
+    margin-right: 0.4rem;
+    width: 3rem;
+    height: 3rem;
 }
 
 .application-title {
-    font-size: 1.8rem;
+    font-size: 1rem;
     font-weight: bold;
 }
 
 .application-description {
     display: none;
-    font-size: 1.5rem;
-    text-align: justify;
-    margin: 1.5rem;
 }
 /* exemplo-bom */
 
@@ -275,15 +266,14 @@ nav ul li a {
 
 #exemplo-ruim h2 {
     margin: 0.4rem;
+    font-family: "oswald semibold";
     text-align: center;
-    font-size: 2.5rem;
 }
 
 .lista-retrocesso {
     align-items: center;
-    justify-content: center;
-    flex-wrap: wrap;
     display: flex;
+    flex-wrap: wrap;
     list-style-type: none;
     padding: 0;
     margin: 0;
@@ -294,34 +284,37 @@ nav ul li a {
     color: #e9e9e9;
     display: flex;
     align-items: center;
-    justify-content: center;
-    text-align: center;
     padding: 0.6rem;
     cursor: pointer;
-    height: 6rem;
-    width: 24rem;
+    height: 4rem;
+    width: 10.3rem;
     border-radius: 1rem;
     margin: 1rem;
     transition: transform 0.3s ease;
 }
+
 .ruim-application-item:not(.description-visible):hover {
     transform: scale(1.1);
 }
+
 .ruim-application-item img {
-    align-items: center;
-    width: 5rem;
-    height: 5rem;
-    margin: 0.5rem;
+    margin-right: 0.4rem;
+    width: 3rem;
+    height: 3rem;
 }
+
+.ruim-application-description.show {
+    display: block;
+}
+
 .ruim-application-title {
-    font-size: 1.8rem;
+    font-size: 1rem;
     font-weight: bold;
 }
+
 .ruim-application-description {
     display: none;
-    font-size: 1.5rem;
-    text-align: justify;
-    margin: 1.5rem;
+    font-size: 0.9rem;
 }
 
 /* exemplo-ruim */
@@ -345,16 +338,14 @@ nav ul li a {
     text-transform: uppercase;
     color: #e9e9e9;
     text-align: left;
-    font-size: 2.5rem;
 }
 #historia p {
     color: #e9e9e9;
-    text-align: justify;
-    font-size: 1.9rem;
+    text-align: left;
 }
 #historia img {
-    width: 4.3rem;
-    height: 4.3rem;
+    width: 3rem;
+    height: 3rem;
     margin-top: 0.5rem;
     margin-right: 0.5rem;
     transition: transform 0.3s ease;
@@ -375,15 +366,13 @@ nav ul li a {
 }
 #tip h2 {
     margin: 1rem;
-    font-size: 2.5rem;
+    font-family: "oswald semibold";
     text-align: center;
-    text-transform: uppercase;
 }
 
 .lista-pedro {
     align-items: center;
-    flex-direction: row;
-    flex-wrap: wrap;
+    flex-direction: column;
     display: flex;
     list-style-type: none;
     padding: 0;
@@ -395,11 +384,10 @@ nav ul li a {
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
     display: flex;
     align-items: center;
-    text-align: center;
     padding: 0.6rem;
     cursor: pointer;
-    height: 6rem;
-    width: 25rem;
+    height: 4rem;
+    width: 15rem;
     border-radius: 1rem;
     margin: 1rem;
     transition: transform 0.3s ease;
@@ -410,8 +398,8 @@ nav ul li a {
 
 .pedro-application-item img {
     margin-right: 1rem;
-    width: 5rem;
-    height: 5rem;
+    width: 3rem;
+    height: 3rem;
 }
 
 .pedro-application-description.show {
@@ -419,15 +407,13 @@ nav ul li a {
 }
 
 .pedro-application-title {
-    font-size: 2rem;
+    font-size: 1rem;
     font-weight: bold;
 }
 
 .pedro-application-description {
     display: none;
-    text-align: justify;
-    font-size: 1.7rem;
-    margin: 1rem;
+    font-size: 0.9rem;
 }
 
 #fim {
@@ -439,30 +425,20 @@ nav ul li a {
     margin-bottom: 2rem;
     box-shadow: 4px 7px 7px 7px rgba(0, 0, 0, 0.25);
 }
-#fim p {
-    font-size: 1.7rem;
-    margin-top: 0rem;
-}
 #fim a {
     text-decoration: none;
     color: #e9e9e9;
 }
 
 .chart-container {
-    font-size: 1rem;
-    width: 58rem;
-    height: 14rem;
+    width: 80%;
     max-width: 600px;
     margin: 0 auto;
-    margin-bottom: 1rem;
 }
 
 .grafico {
-    margin-left: 2.5rem;
-    margin-right: 2.5rem;
     padding: 1rem;
     margin-top: 3rem;
-    margin-bottom: 2.3rem;
     display: flex;
     flex-direction: column;
     text-align: center;
@@ -471,47 +447,26 @@ nav ul li a {
     border-radius: 1rem;
     box-shadow: 2px 4px 4px 2px rgba(0, 0, 0, 0.25) inset;
 }
-
-.grafico h4 {
-    text-transform: uppercase;
-    margin-top: 1rem;
+.grafico h4{
     margin-bottom: 0;
-    font-size: 2rem;
 }
-.grafico h5 {
+.grafico h5{
     margin-top: 0.5rem;
-    font-size: 1rem;
 }
 .titu-fim {
     display: flex;
     flex-direction: row;
-    font-size: 2rem;
-    text-transform: uppercase;
 }
-/* Estilo normal */
 .titu-fim img {
-    align-items: center;
-    justify-content: center;
-    margin-left: 17rem;
-    width: 6rem;
-    height: 6rem;
+    width: 5rem;
+    height: 5rem;
+    transition: transform 0.3s ease; /* Adiciona uma transição suave à animação */
 }
 
-/* Estilo no hover (quando o mouse passa por cima) */
 .titu-fim img:hover {
-    /* Define a animação de rotação */
-    animation: girar 2.3s linear infinite;
-}
-
-/* Definição da animação de rotação */
-@keyframes girar {
-    /* A rotação completa será de 360 graus */
-    from {
-        transform: rotate(0deg);
-    }
-    to {
-        transform: rotate(360deg);
-    }
+    transform: scale(
+        1.2
+    ); /* A imagem será ampliada em 20% (zoom) quando o mouse estiver sobre ela */
 }
 
 /* pedro */

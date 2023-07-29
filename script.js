@@ -8,8 +8,8 @@ boxes.forEach((box) => {
 
         if (isVisible) {
             paragraph.style.display = "none";
-            box.style.height = "6rem";
-            box.style.width = "24rem";
+            box.style.height = "4rem";
+            box.style.width = "10.3rem";
             box.classList.remove("description-visible");
         } else {
             paragraph.style.display = "block";
@@ -32,8 +32,8 @@ boxesRuim.forEach((boxr) => {
 
         if (ruimisVisible) {
             ruimparagraph.style.display = "none";
-            boxr.style.height = "6rem";
-            boxr.style.width = "24rem";
+            boxr.style.height = "4rem";
+            boxr.style.width = "10.3rem";
             boxr.classList.remove("description-visible"); // Remove the class when description is hidden
         } else {
             ruimparagraph.style.display = "block";
@@ -55,11 +55,14 @@ boxesDiv.forEach((boxDiv) => {
 
         if (isParagraphVisible) {
             dvParagraph.style.display = "none";
+            boxDiv.style.width = "19rem";
+            boxDiv.style.margin = "1.5rem";
             dvImage.style.marginTop = "0.5rem";
         } else {
             dvParagraph.style.display = "block";
             dvImage.style.marginTop = "-3rem";
             boxDiv.style.height = "auto";
+            boxDiv.style.width = "19rem";
             boxDiv.style.marginTop = "2.5rem";
         }
     });
@@ -77,8 +80,8 @@ boxesPedro.forEach((item) => {
 
         if (isVisible) {
             description.style.display = "none";
-            item.style.height = "6rem";
-            item.style.width = "25rem";
+            item.style.height = "4rem";
+            item.style.width = "15rem";
             item.classList.remove("description-visible"); // Remove the class when description is hidden
         } else {
             description.style.display = "block";
