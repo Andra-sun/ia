@@ -1,0 +1,523 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #e9e9e9;
+    font-family: "raleway";
+    color: #333333;
+}
+
+::-webkit-scrollbar {
+    width: 0rem;
+}
+
+/* ---------------------------------------------- */
+@font-face {
+    font-family: "Raleway";
+    src: url("font/Raleway-VariableFont_wght.ttf");
+}
+@font-face {
+    font-family: "oswald";
+    src: url("font/Oswald-VariableFont_wght.ttf");
+}
+/* ---------------------------------------------- */
+
+/* titulo */
+header {
+    font-family: "oswald";
+    color: #e9e9e9;
+    background-color: #0072bb;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    padding: 20px;
+    align-items: center;
+}
+header div {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+header h1 {
+    font-size: 3.3rem;
+    text-align: center;
+    margin: 0;
+}
+header p {
+    font-size: 2.3rem;
+    margin: 0;
+}
+
+/* titulo */
+
+/* ---------------------------------------------- */
+
+/* oq é */
+
+#introduction {
+    display: flex;
+    margin: 1rem;
+    flex-direction: column;
+    text-align: end;
+}
+#introduction h2 {
+    color: #333333;
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    margin-bottom: 0;
+}
+.inicio {
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+}
+.inicio p {
+    font-size: 2rem;
+    text-align: justify;
+}
+.inicio img {
+    width: 15rem;
+    height: 15rem;
+    margin-left: 2.5rem;
+    margin-right: 2.5rem;
+    transition: transform 0.3s ease;
+}
+.inicio img:hover {
+    transform: scale(1.1);
+}
+
+.parte2 {
+    display: flex;
+    flex-direction: column;
+    box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.25);
+    background-color: #6ab7fa31;
+    border-radius: 0.4rem;
+    text-align: center;
+}
+
+#hs h2,
+#hs h3 {
+    margin: 1.3rem;
+}
+.parte2 h2 {
+    margin-bottom: 0rem;
+    text-transform: uppercase;
+    color: #333333;
+    font-size: 2.5rem;
+}
+.parte2 h3 {
+    font-size: 1.8rem;
+}
+.parte2 p {
+    color: #333333;
+}
+
+.lista-de-divisoes {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.divisoes {
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25) inset;
+    background-color: #6ec6ff;
+    align-items: center;
+    text-align: center;
+    padding: 0.6rem;
+    cursor: pointer;
+    border-radius: 1rem;
+    margin-top: 1.5rem;
+    width: 19rem;
+    transition: 0.5s;
+    margin: 2rem;
+}
+
+.divisao-titu {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.divisao-corpo {
+    display: none;
+    margin: 1rem;
+    font-size: 1.45rem;
+}
+.dvia img {
+    margin-top: 0.5rem;
+    width: 6rem;
+    height: 6rem;
+    transition: 0.5s;
+    margin-bottom: -1rem;
+}
+
+/* oq é */
+
+/* ---------------------------------------------- */
+
+.linha-reta {
+    margin: 3rem;
+    border-bottom: 1px solid rgb(163, 163, 163);
+}
+.linha-reta1 {
+    margin-left: 3rem;
+    margin-right: 3rem;
+    margin-bottom: 1rem;
+    margin-top: 3rem;
+    border-bottom: 1px solid rgb(163, 163, 163);
+}
+.linha-reta2 {
+    margin-left: 3rem;
+    margin-right: 3rem;
+    margin-bottom: 1rem;
+    margin-top: 1.5rem;
+    border-bottom: 1px solid rgb(163, 163, 163);
+}
+
+/* ---------------------------------------------- */
+
+/* final */
+footer {
+    background-color: #002c52;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    color: #e9e9e9;
+    padding: 1rem;
+    text-align: center;
+    font-size: 1.5rem;
+}
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 1rem;
+}
+nav ul li {
+    display: inline-block;
+    margin-left: 4rem;
+}
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+/* final */
+
+/* ---------------------------------------------- */
+
+/* exemplo-bom */
+#exemplo-bom {
+    margin: 0;
+}
+
+#exemplo-bom h2 {
+    text-transform: uppercase;
+    margin: 0.4rem;
+    text-align: center;
+    font-size: 2.5rem;
+}
+
+.lista-avanco {
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    display: flex;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.application-item {
+    background-color: #6ec6ff;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 0.6rem;
+    cursor: pointer;
+    height: 6rem;
+    width: 24rem;
+    border-radius: 1rem;
+    margin: 1rem;
+    transition: transform 0.3s ease;
+}
+.application-item:not(.description-visible):hover {
+    transform: scale(
+        1.1
+    ); /* Apply the transition only when the description is not visible */
+}
+
+.application-item img {
+    align-items: center;
+    width: 5rem;
+    height: 5rem;
+    margin: 0.5rem;
+}
+
+.application-title {
+    font-size: 1.8rem;
+    font-weight: bold;
+}
+
+.application-description {
+    display: none;
+    font-size: 1.5rem;
+    text-align: justify;
+    margin: 1.5rem;
+}
+/* exemplo-bom */
+
+/* ---------------------------------------------- */
+
+/* exemplo-ruim */
+#exemplo-ruim {
+    margin: 0;
+}
+
+#exemplo-ruim h2 {
+    text-transform: uppercase;
+    margin: 0.4rem;
+    text-align: center;
+    font-size: 2.5rem;
+}
+
+.lista-retrocesso {
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    display: flex;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+.ruim-application-item {
+    background-color: #002c52;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    color: #e9e9e9;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 0.6rem;
+    cursor: pointer;
+    height: 6rem;
+    width: 24rem;
+    border-radius: 1rem;
+    margin: 1rem;
+    transition: transform 0.3s ease;
+}
+.ruim-application-item:not(.description-visible):hover {
+    transform: scale(1.1);
+}
+.ruim-application-item img {
+    align-items: center;
+    width: 5rem;
+    height: 5rem;
+    margin: 0.5rem;
+}
+.ruim-application-title {
+    font-size: 1.8rem;
+    font-weight: bold;
+}
+.ruim-application-description {
+    display: none;
+    font-size: 1.5rem;
+    text-align: justify;
+    margin: 1.5rem;
+}
+
+/* exemplo-ruim */
+
+/* ---------------------------------------------- */
+
+/* parte de bianca */
+#historia {
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    margin: 0.5rem;
+    background-color: #2471a3;
+    border-radius: 0.4rem;
+    display: flex;
+}
+#historia div {
+    margin-top: -1.2rem;
+    padding: 1rem;
+    flex-direction: column;
+}
+#historia h2 {
+    text-transform: uppercase;
+    color: #e9e9e9;
+    text-align: left;
+    font-size: 2.5rem;
+}
+#historia p {
+    color: #e9e9e9;
+    text-align: justify;
+    font-size: 1.9rem;
+}
+#historia img {
+    width: 4.3rem;
+    height: 4.3rem;
+    margin-top: 0.5rem;
+    margin-right: 0.5rem;
+    transition: transform 0.3s ease;
+}
+#historia img:hover {
+    transform: scale(1.4);
+}
+
+/* pedro */
+
+#tip li {
+    list-style: none;
+}
+
+#tip {
+    display: flex;
+    flex-direction: column;
+}
+#tip h2 {
+    margin: 1rem;
+    font-size: 2.5rem;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.lista-pedro {
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    display: flex;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.pedro-application-item {
+    background-color: #72bdff;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    display: flex;
+    align-items: center;
+    text-align: center;
+    padding: 0.6rem;
+    cursor: pointer;
+    height: 6rem;
+    width: 25rem;
+    border-radius: 1rem;
+    margin: 1rem;
+    transition: transform 0.3s ease;
+}
+.pedro-application-item:not(.description-visible):hover {
+    transform: scale(1.1);
+}
+
+.pedro-application-item img {
+    margin-right: 1rem;
+    width: 5rem;
+    height: 5rem;
+}
+
+.pedro-application-description.show {
+    display: block;
+}
+
+.pedro-application-title {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.pedro-application-description {
+    display: none;
+    text-align: justify;
+    font-size: 1.7rem;
+    margin: 1rem;
+}
+
+#fim {
+    color: #e9e9e9;
+    background-color: #2471a3;
+    padding: 2rem;
+    border-radius: 1rem;
+    margin: 1rem;
+    margin-bottom: 2rem;
+    box-shadow: 4px 7px 7px 7px rgba(0, 0, 0, 0.25);
+}
+#fim p {
+    font-size: 1.7rem;
+    margin-top: 0rem;
+}
+#fim a {
+    text-decoration: none;
+    color: #e9e9e9;
+}
+
+.chart-container {
+    font-size: 1rem;
+    width: 58rem;
+    height: 14rem;
+    max-width: 600px;
+    margin: 0 auto;
+    margin-bottom: 1rem;
+}
+
+.grafico {
+    margin-left: 2.5rem;
+    margin-right: 2.5rem;
+    padding: 1rem;
+    margin-top: 3rem;
+    margin-bottom: 2.3rem;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    background-color: #e9e9e9;
+    color: #333333;
+    border-radius: 1rem;
+    box-shadow: 2px 4px 4px 2px rgba(0, 0, 0, 0.25) inset;
+}
+
+.grafico h4 {
+    text-transform: uppercase;
+    margin-top: 1rem;
+    margin-bottom: 0;
+    font-size: 2rem;
+}
+.grafico h5 {
+    margin-top: 0.5rem;
+    font-size: 1rem;
+}
+.titu-fim {
+    display: flex;
+    flex-direction: row;
+    font-size: 2rem;
+    text-transform: uppercase;
+}
+/* Estilo normal */
+.titu-fim img {
+    align-items: center;
+    justify-content: center;
+    margin-left: 17rem;
+    width: 6rem;
+    height: 6rem;
+}
+
+/* Estilo no hover (quando o mouse passa por cima) */
+.titu-fim img:hover {
+    /* Define a animação de rotação */
+    animation: girar 2.3s linear infinite;
+}
+
+/* Definição da animação de rotação */
+@keyframes girar {
+    /* A rotação completa será de 360 graus */
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+/* pedro */
+a {
+    text-decoration: none;
+    color: #e9e9e9;
+}
